@@ -48,7 +48,7 @@ load_nCov2019 <- function(lang = 'auto', source="github") {
   rds <- tempfile(pattern=".rds")
   url1 = 'https://gitee.com/timze/historicaldata/raw/master/dxy_data.rds'
   url2 = 'https://gitee.com/timze/historicaldata/raw/master/nhc_data.rds'
-  url3 = 'https://gitee.com/timze/historicaldata/raw/master/github_data.rds'
+  url3 = 'https://gitee.com/tidyfriday/historicaldata/raw/master/github_data.rds'
   url = ifelse(source == 'dxy',url1,
                ifelse(source == 'cnnhc', url2, 
                url3))
